@@ -1,0 +1,21 @@
+1. curl command(s) to obtain list of deices for ACI:
+
+curl --location --request GET 'https://sandboxapicem.cisco.com/api/node/class/fvCEp.xml' \
+--header 'X-CSRF-TOKEN: pC0GAp5U-AMexo8U2L6GuhsAQGSZh9TVkakc' \
+--header 'Authorization: Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE=' \
+--header 'Cookie: JSESSIONID=tdimul8p21bd4yq9xlf9xlas; _apic-em=s%3ACuBBTGFigFq0oFjchmDUIqmDTB8vGeLy.%2FDkWNHDZ59zaSgiAypXxy2C9IIv3tirO%2FHb%2Fbfp0CPA'
+
+
+2. curl command(s) to obtain list of clients from DNA:
+
+
+curl --location --request GET 'https://sandboxdnac.cisco.com/dna/intent/api/v1/client-health' \
+--header 'x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDJjMGUyODE0NzEwYTIyZDFmN2UxNzIiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwMmJlYmU1MTQ3MTBhMDBjOThmYTQwOSJdLCJ0ZW5hbnRJZCI6IjYwMmJlYmU1MTQ3MTBhMDBjOThmYTQwMiIsImV4cCI6MTYxNTgxNDMyMywiaWF0IjoxNjE1ODEwNzIzLCJqdGkiOiI0ODk4NzQzOC04MGQ3LTQ5NDQtODQxMy1hYTMxN2ZlOWJjZWUiLCJ1c2VybmFtZSI6ImRldm5ldHVzZXIifQ.U931eSVZ2IsKF36V5FrO1kF-IZdfBKSaw8ytAAUdYGaPUnQdVwEJjmkPpD4oBYxtx5aYxBvVg7c0WROjwpGC6ShrIynPy8Fcojx7yo204xQc-4KjmIDwjY5wuxU7PXBXYvmxPhSv3XhorR7MG21ddUpv2qnDivrlV_yum-XtIPVNbojmH_vb_H8N1Yg4VEARvTXssp_WSb9QygjBCPyekmsrhx4tyzyRsN9QIocfuQATr7eG_SEwSLwFBZ6jHFaQ5HGXQhuvfpjfVJrE5CSwMjsmX49qkD3SaqKgeTP2WsEabg4gr9OE1PHyJyJlxn6wL4nhLCrzpH1uKAVQmy08-w'
+
+
+
+3. curl command(s) to obtain list of hosts in Meraki for organization:
+
+
+curl --location --request GET 'https://api.meraki.com/api/v0/networks/L_646829496481105433/devices' \
+--header 'X-Cisco-Meraki-API-Key: 6bec40cf957de430a6f1f2baa056b99a4fac9ea0'
